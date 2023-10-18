@@ -17,6 +17,16 @@ button, select{
 }
 
 .square {
-    border: 2px solid transparent;
-     
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.active {
+    background-color: blue;
+    font-size: 1.5rem;
+    color: white;
 }
