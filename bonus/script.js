@@ -1,10 +1,19 @@
 const btn = document.getElementById('gioca');
 const resetBtn = document.getElementById('resetButton')
-
+const difficultySelect = document.getElementById('difficultySelect');
 
 btn.addEventListener('click', function(){
     //numeri quadratini generati    
-    const numSquare = 100;
+    const difficulty = parseInt(difficultySelect.value);
+    let numSquare;
+
+    if (difficulty === 1) {
+        numSquare = 100;
+    } else if (difficulty === 2) {
+        numSquare = 81;
+    } else if (difficulty === 3) {
+        numSquare = 49;
+    }
   //griglia gioco
   const playground = document.getElementById('playground');
   playground.innerHTML = ''
