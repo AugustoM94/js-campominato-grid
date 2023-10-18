@@ -1,0 +1,22 @@
+* {
+    cursor: hand;
+    
+    }
+
+#playground {
+  width: 600px;
+  height: 600px;
+  background-color: lightgray;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button, select{
+  border-radius: 10%;  
+}
+
+.square {
+    border: 2px solid transparent;
+     
+}
