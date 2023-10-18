@@ -1,4 +1,5 @@
-const btn = document.querySelector('button');
+const btn = document.getElementById('gioca');
+const resetBtn = document.getElementById('resetButton')
 
 
 btn.addEventListener('click', function(){
@@ -16,6 +17,13 @@ btn.addEventListener('click', function(){
 
 })
 
+resetBtn.addEventListener('click', function() {
+    const squares = document.querySelectorAll('.square');
+    squares.forEach(square => {
+        square.classList.remove('active');
+        square.style.color = '';
+    });
+});
 
 function drawSquare(squareIndex, numSquare){
     const squareWidth = Math.sqrt(numSquare);
