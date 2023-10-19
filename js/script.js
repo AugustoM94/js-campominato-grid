@@ -33,6 +33,7 @@ function drawSquare(squareIndex, numSquare){
     square.style.height =  square.style.width;  
     square.innerHTML = squareIndex + 1;
     square.addEventListener('click', function(){
+        square.innerHTML = squareIndex + 1;
         square.classList.add('active')
         square.style.color = 'white';
     })
